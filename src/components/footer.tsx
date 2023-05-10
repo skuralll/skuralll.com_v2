@@ -40,6 +40,10 @@ const useStyles = createStyles((theme) => ({
 
   legends: {
     marginBottom: rem(10),
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }));
 
@@ -50,12 +54,17 @@ export default function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
+        {/* 説明 */}
         <Container className={classes.legends}>
           <Text fz="md" c="gray.7">
             © 2023 skuralll
           </Text>
-          {/* <Link href={"mailto:skuralll.com@gmail.com"} external></Link> */}
+
+          <Link href={"mailto:skuralll.com@gmail.com"} external>
+            View on GitHub
+          </Link>
         </Container>
+        {/* アクセスカウンタ */}
         <Image
           src="https://moe-counter.yude.jp/get/@:skuralll"
           width={315}
