@@ -1,9 +1,17 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
+import Header from "@/components/header";
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
+
+  const links = [
+    {
+      link: "",
+      label: "TEST",
+    },
+  ];
 
   return (
     <>
@@ -23,6 +31,7 @@ export default function App(props: AppProps) {
           colorScheme: "light",
         }}
       >
+        <Header links={links} />
         <Component {...pageProps} />
       </MantineProvider>
     </>
