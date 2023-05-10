@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -33,6 +34,7 @@ export default function App(props: AppProps) {
       >
         <Header links={links} />
         <Component {...pageProps} />
+        <Footer />
       </MantineProvider>
     </>
   );
