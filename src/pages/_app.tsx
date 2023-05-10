@@ -9,8 +9,8 @@ export default function App(props: AppProps) {
 
   const links = [
     {
-      link: "",
-      label: "TEST",
+      link: "/",
+      label: "Home",
     },
   ];
 

@@ -7,6 +7,7 @@ import { User as UserModel } from "@/models/user";
 import { user } from "@/config/user";
 import Socials from "@/components/socials";
 import { Stack } from "@mantine/core";
+import About from "@/components/about";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Stack spacing="lg" mb="md">
         <User user={user} />
         <Socials />
+        <About />
       </Stack>
     </>
   );
