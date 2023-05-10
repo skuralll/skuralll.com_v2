@@ -26,8 +26,11 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emotion/cache", "npm:11.11.0"],\
           ["@emotion/react", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:11.11.0"],\
+          ["@emotion/serialize", "npm:1.1.2"],\
           ["@emotion/server", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:11.11.0"],\
+          ["@emotion/utils", "npm:1.2.1"],\
           ["@mantine/core", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:6.0.10"],\
           ["@mantine/hooks", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:6.0.10"],\
           ["@mantine/next", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:6.0.10"],\
@@ -4497,8 +4500,11 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["skuralll.com_v2", "workspace:."],\
+          ["@emotion/cache", "npm:11.11.0"],\
           ["@emotion/react", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:11.11.0"],\
+          ["@emotion/serialize", "npm:1.1.2"],\
           ["@emotion/server", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:11.11.0"],\
+          ["@emotion/utils", "npm:1.2.1"],\
           ["@mantine/core", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:6.0.10"],\
           ["@mantine/hooks", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:6.0.10"],\
           ["@mantine/next", "virtual:9a3948b9c3c33675cbe2e4980211919ea675fceec85d148e961699259a7fcc41b10b72f87d10f927e7c64d95de47e6b48846655a8bdbe2ec54b048b4cc0554ec#npm:6.0.10"],\
