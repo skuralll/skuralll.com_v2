@@ -19,7 +19,7 @@ export default function Socials() {
           style={{ fontSize: "36px", color: "#009bf0" }}
         />
       </Link>
-      <Link href={"mailto:skuralll.com@gmail.com"} external>
+      <Link href={"https://scrapbox.io/skuralllreport/"} external>
         <Image
           src="/icons/scrapbox.svg"
           width={32}
