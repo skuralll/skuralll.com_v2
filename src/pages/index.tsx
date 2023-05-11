@@ -6,19 +6,17 @@ import User from "@/components/user";
 import { User as UserModel } from "@/models/user";
 import { user } from "@/config/user";
 import Socials from "@/components/socials";
-import { Stack } from "@mantine/core";
+import { Stack, createStyles } from "@mantine/core";
 import About from "@/components/about";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Stack spacing="lg" mb="md">
         <User user={user} />
         <Socials />
         <About />
       </Stack>
-    </>
+    </div>
   );
 }
