@@ -7,7 +7,7 @@ export default function User({ user }: { user: UserModel }) {
     <Box>
       <Image
         sx={{ margin: "auto" }}
-        src="/images/profile.jpg"
+        src="/images/profile.png"
         width={150}
         height={150}
         alt=""
