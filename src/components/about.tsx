@@ -24,7 +24,10 @@ const useStyles = createStyles((theme) => ({
     width: rem(512),
   },
 
-  title: {},
+  title: {
+    borderLeft: `inset ${rem(5)}`,
+    paddingLeft: rem(10),
+  },
 
   inner: {
     padding: rem(20),
@@ -69,24 +72,14 @@ function Profile() {
   );
 }
 
-function AboutTitle() {
-  const { classes, cx } = useStyles();
-
-  return (
-    <Paper className={classes.titleBox}>
-      <Title order={2} className={classes.titleText}>
-        About
-      </Title>
-    </Paper>
-  );
-}
-
 export default function About() {
   const { classes, cx } = useStyles();
 
   return (
     <Container className={classes.about}>
-      <Title>About</Title>
+      <Title order={2} className={classes.title}>
+        About
+      </Title>
       <Container className={classes.inner}>
         <Profile />
       </Container>
