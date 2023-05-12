@@ -77,7 +77,7 @@ export default function About() {
 
   return (
     <Container className={classes.about}>
-      <Title order={2} className={classes.title}>
+      <Title fw={500} order={2} className={classes.title}>
         About
       </Title>
       <Container className={classes.inner}>
