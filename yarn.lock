@@ -714,6 +714,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tabler/icons-react@npm:^2.18.0":
+  version: 2.18.0
+  resolution: "@tabler/icons-react@npm:2.18.0"
+  dependencies:
+    "@tabler/icons": "npm:2.18.0"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: 2b00dc4745dcc738bb85b3ed8d0934b4d05ca04f5a1746475c47f4ca7b36a02c275b824e3ffbb48a0e074925494f450f8c50b11d4f4dcda8e9ea574a56c7045d
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:2.18.0":
+  version: 2.18.0
+  resolution: "@tabler/icons@npm:2.18.0"
+  checksum: 01be5ba4a55acfa75bfea6d67256294b4dcb6fa2edddebe3e9ea1f292504f8aa2dd0c5231024ac14858754101b9426153cfe03010e1374019459b795ce1c460b
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^8":
   version: 8.37.0
   resolution: "@types/eslint@npm:8.37.0"
@@ -3229,7 +3248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3592,6 +3611,7 @@ __metadata:
     "@mantine/core": "npm:^6.0.10"
     "@mantine/hooks": "npm:^6.0.10"
     "@mantine/next": "npm:^6.0.10"
+    "@tabler/icons-react": "npm:^2.18.0"
     "@types/eslint": "npm:^8"
     "@types/node": "npm:20.1.1"
     "@types/react": "npm:18.2.6"

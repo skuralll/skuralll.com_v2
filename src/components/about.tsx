@@ -18,6 +18,8 @@ import {
 } from "@mantine/core";
 import { profile } from "@/config/profile";
 import { group } from "console";
+import ArticleCard from "@/components/card";
+import { ArticleCardProps } from "@/components/card";
 
 const useStyles = createStyles((theme) => ({
   about: {
@@ -27,6 +29,7 @@ const useStyles = createStyles((theme) => ({
   title: {
     borderLeft: `inset ${rem(5)}`,
     paddingLeft: rem(10),
+    marginBottom: rem(20),
   },
 
   inner: {
@@ -75,14 +78,28 @@ function Profile() {
 export default function About() {
   const { classes, cx } = useStyles();
 
+  const cardProps: ArticleCardProps = {
+    image: "https://i.imgur.com/Cij5vdL.png",
+    link: "https://mantine.dev/",
+    title: "IPA 基本情報技術者",
+    rating: "",
+    description: "ITに関する基本知識を身につけています",
+    author: {
+      name: "Bill Wormeater",
+      image:
+        "https://images.unsplash.com/photo-1593229874334-90d965f27c42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    },
+  };
+
   return (
     <Container className={classes.about}>
       <Title fw={500} order={2} className={classes.title}>
         About
       </Title>
-      <Container className={classes.inner}>
+      {/* <Container className={classes.inner}>
         <Profile />
-      </Container>
+      </Container> */}
+      <ArticleCard {...cardProps} />
     </Container>
   );
 }
