@@ -1,5 +1,5 @@
 import { Group, Image } from "@mantine/core";
-import Link from "@/components/link";
+import Link from "@/components/utils/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 

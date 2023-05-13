@@ -7,7 +7,7 @@ import {
   Image,
   Text,
 } from "@mantine/core";
-import Link from "@/components/link";
+import Link from "@/components/utils/link";
 
 const useStyles = createStyles((theme) => ({
   footer: {

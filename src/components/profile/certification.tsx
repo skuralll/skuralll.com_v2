@@ -18,8 +18,7 @@ import {
 } from "@mantine/core";
 import { profile } from "@/config/profile";
 import { group } from "console";
-import ArticleCard from "@/components/card";
-import { ArticleCardProps } from "@/components/card";
+import CertificationCard from "@/components/profile/card";
 
 const useStyles = createStyles((theme) => ({
   about: {
@@ -78,28 +77,34 @@ function Profile() {
 export default function About() {
   const { classes, cx } = useStyles();
 
-  const cardProps: ArticleCardProps = {
-    image: "https://i.imgur.com/Cij5vdL.png",
-    link: "https://mantine.dev/",
-    title: "IPA 基本情報技術者",
-    rating: "",
-    description: "ITに関する基本知識を身につけています",
-    author: {
-      name: "Bill Wormeater",
-      image:
-        "https://images.unsplash.com/photo-1593229874334-90d965f27c42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
-    },
-  };
+  // const cardProps: ArticleCardProps = {
+  //   image: "https://i.imgur.com/Cij5vdL.png",
+  //   link: "https://mantine.dev/",
+  //   title: "IPA 基本情報技術者",
+  //   rating: "",
+  //   description: "ITに関する基本知識を身につけています",
+  //   author: {
+  //     name: "Bill Wormeater",
+  //     image:
+  //       "https://images.unsplash.com/photo-1593229874334-90d965f27c42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+  //   },
+  // };
 
   return (
     <Container className={classes.about}>
       <Title fw={500} order={2} className={classes.title}>
-        About
+        Certification
       </Title>
       {/* <Container className={classes.inner}>
         <Profile />
       </Container> */}
-      <ArticleCard {...cardProps} />
+      <CertificationCard
+        image="https://cdn.pixabay.com/photo/2021/01/05/16/26/laptop-5891723_960_720.jpg"
+        title="基本情報技術者"
+        description="ITに関する基本知識を身につけています"
+        date="2020/4"
+        link=""
+      />
     </Container>
   );
 }

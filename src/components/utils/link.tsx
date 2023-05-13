@@ -7,15 +7,21 @@ export type LinkProps = {
   children: React.ReactNode;
 } & (
   | ({
-      external: true;
+      external: boolean;
+      disable: boolean;
     } & AnchorProps)
   | {
       external?: false;
+      disable?: false;
     }
 );
 
 const Link: React.FC<LinkProps> = memo((props) => {
-  const { href, external, children, ...otherProps } = props;
+  const { href, external, children, disable, ...otherProps } = props;
+
+  if (disable) {
+    return <>{children}</>;
+  }
 
   if (external) {
     return (
