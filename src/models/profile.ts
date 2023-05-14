@@ -1,7 +1,9 @@
 // プロフィールを表す型
-export type ProfileItem = {
-  category: string;
-  items: string[];
+export type Profile = {
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+  link: string;
+  isExternal: boolean;
 };
-
-export type Profile = ProfileItem[];
