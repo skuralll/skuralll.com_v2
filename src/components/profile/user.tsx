@@ -21,9 +21,9 @@ export default function User({ user }: { user: UserModel }) {
             {user.tag}
           </Text>
         </Box>
-        <Text sx={{ textAlign: "center", whiteSpace: "pre" }}>
+        {/* <Text sx={{ textAlign: "center", whiteSpace: "pre" }}>
           {user.description}
-        </Text>
+        </Text> */}
       </Stack>
     </Box>
   );
