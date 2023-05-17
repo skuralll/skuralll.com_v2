@@ -1,10 +1,24 @@
-import { Box, Container, Flex, Group, Sx, Title, rem } from "@mantine/core";
 import {
-  IconAddressBook,
-  IconShare,
-  TablerIconsProps,
-} from "@tabler/icons-react";
-import React, { memo } from "react";
+  Box,
+  Container,
+  Group,
+  Sx,
+  Title,
+  createStyles,
+  rem,
+} from "@mantine/core";
+import React from "react";
+
+const useStyles = createStyles((theme) => ({
+  title: {
+    textAlign: "center",
+    marginBottom: theme.spacing.xs,
+    color: "#3E4C5A",
+  },
+  titleText: {
+    textAlign: "center",
+  },
+}));
 
 export default function Section({
   children,
@@ -17,24 +31,15 @@ export default function Section({
   title: string;
   sx?: Sx;
 }) {
+  const { classes, cx } = useStyles();
+
   const Icon = icon;
+
   return (
     <Container pt="md" pb="lg">
-      <Group
-        spacing={rem(1)}
-        sx={(theme) => ({
-          textAlign: "center",
-          marginBottom: theme.spacing.xs,
-          color: "#3E4C5A",
-        })}
-      >
+      <Group spacing={rem(1)} className={classes.title}>
         <Icon size={28} />
-        <Title
-          order={2}
-          sx={(theme) => ({
-            textAlign: "center",
-          })}
-        >
+        <Title order={2} className={classes.titleText}>
           {title}
         </Title>
       </Group>
