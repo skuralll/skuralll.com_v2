@@ -19,36 +19,28 @@ import {
 import { contacts } from "@/config/profile";
 import { group } from "console";
 import ProfileCard from "@/components/profile/card";
+import Section from "../utils/section";
+import { IconAddressBook, IconShare } from "@tabler/icons-react";
 
 const useStyles = createStyles((theme) => ({
   about: {
     // width: rem(512),
+    // textAlign: "left",
   },
 
   title: {
-    borderLeft: `inset ${rem(5)}`,
-    paddingLeft: rem(10),
-    marginBottom: rem(20),
-  },
-
-  grid: {
-    gap: rem(12),
+    // borderLeft: `inset ${rem(5)}`,
+    // paddingLeft: rem(10),
+    // marginBottom: rem(20),
   },
 }));
 
-export default function SNS() {
+export default function Contacts() {
   const { classes, cx } = useStyles();
 
   return (
-    <Container className={classes.about}>
-      <Title fw={500} order={2} className={classes.title}>
-        Contacts
-      </Title>
-      <Grid className={classes.grid}>
-        {contacts.map((contact) => (
-          <ProfileCard profile={contact} key={contact.title} />
-        ))}
-      </Grid>
-    </Container>
+    <Section icon={IconAddressBook} title="Contacts">
+      <div></div>
+    </Section>
   );
 }

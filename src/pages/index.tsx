@@ -8,7 +8,7 @@ import { user } from "@/config/user";
 import Socials from "@/components/profile/socials";
 import { Divider, Stack, createStyles } from "@mantine/core";
 import Certification from "@/components/profile/certifications";
-import Contact from "@/components/profile/contacts";
+import Contacts from "@/components/profile/contacts";
 
 export default function Home() {
   return (
@@ -16,9 +16,9 @@ export default function Home() {
       <Stack spacing="lg" mb="md">
         <User user={user} />
         {/* <Socials /> */}
-        <Divider variant="dotted" />
-        <Certification />
-        <Contact />
+        {/* <Divider variant="dotted" /> */}
+        {/* <Certification /> */}
+        <Contacts />
       </Stack>
     </div>
   );
