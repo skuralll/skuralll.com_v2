@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Stack spacing="lg" mb="md">
-        <User user={user} />
+        <User />
         {/* <Socials /> */}
         {/* <Divider variant="dotted" /> */}
         {/* <Certification /> */}

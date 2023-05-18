@@ -17,6 +17,7 @@ const useStyles = createStyles((theme) => ({
   },
   titleText: {
     textAlign: "center",
+    fontWeight: "bold",
   },
 }));
 

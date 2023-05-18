@@ -15,12 +15,14 @@ import {
   Space,
   Box,
   Card,
+  Stack,
 } from "@mantine/core";
 import { contacts } from "@/config/profile";
 import { group } from "console";
 import ProfileCard from "@/components/profile/card";
 import Section from "../utils/section";
 import { IconAddressBook, IconShare } from "@tabler/icons-react";
+import Link from "../utils/link";
 
 const useStyles = createStyles((theme) => ({
   about: {
@@ -40,7 +42,16 @@ export default function Contacts() {
 
   return (
     <Section icon={IconAddressBook} title="Contacts">
-      <div></div>
+      <Stack spacing="sm">
+        {contacts.map((contact) => (
+          <div key={contact.title}>
+            <Link href="" external>
+              <Title order={4}>{contact.title}</Title>
+            </Link>
+            <Text>{contact.description}</Text>
+          </div>
+        ))}
+      </Stack>
     </Section>
   );
 }

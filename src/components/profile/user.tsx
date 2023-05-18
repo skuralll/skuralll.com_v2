@@ -1,5 +1,5 @@
 import { Box, Image, Stack, Text, Title, createStyles } from "@mantine/core";
-import { User as UserModel } from "@/models/user";
+import { user } from "@/config/profile";
 
 const useStyles = createStyles((theme) => ({
   avatar: {
@@ -9,7 +9,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 // ユーザーのプロフィールを表示するコンポーネント
-export default function User({ user }: { user: UserModel }) {
+export default function User() {
   const { classes, cx } = useStyles();
 
   return (
