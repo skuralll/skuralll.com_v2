@@ -1,6 +1,7 @@
 import User from "@/components/profile/user";
 import { Stack } from "@mantine/core";
 import Contacts from "@/components/profile/contacts";
+import Works from "@/components/profile/works";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         {/* <Socials /> */}
         {/* <Divider variant="dotted" /> */}
         {/* <Certification /> */}
+        <Works />
         <Contacts />
       </Stack>
     </div>
