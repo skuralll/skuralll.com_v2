@@ -40,20 +40,12 @@ export default function ProfileCard({ profile }: { profile: Profile }) {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section>
-        <Link
-          href="link"
-          external={profile.isExternal}
-          disable={profile.link === ""}
-        >
+        <Link href="link" external={profile.isExternal}>
           <Image src={profile.image} height={180} alt={profile.title} />
         </Link>
       </Card.Section>
 
-      <Link
-        href="link"
-        external={profile.isExternal}
-        disable={profile.link === ""}
-      >
+      <Link href="link" external={profile.isExternal}>
         <Text className={classes.title} fw={500}>
           {profile.title}
         </Text>
