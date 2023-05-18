@@ -1,30 +1,14 @@
-import {
-  Container,
-  SimpleGrid,
-  Grid,
-  Skeleton,
-  useMantineTheme,
-  rem,
-  Title,
-  Center,
-  Text,
-  Paper,
-  Group,
-  List,
-  createStyles,
-  Space,
-  Box,
-  Card,
-  Stack,
-} from "@mantine/core";
+import { Title, Text, createStyles, Stack } from "@mantine/core";
 import { contacts } from "@/config/profile";
-import { group } from "console";
-import ProfileCard from "@/components/profile/card";
 import Section from "../utils/section";
-import { IconAddressBook, IconShare, IconUser } from "@tabler/icons-react";
+import { IconAddressBook } from "@tabler/icons-react";
 import Link from "../utils/link";
 
-const useStyles = createStyles((theme) => ({}));
+const useStyles = createStyles((theme) => ({
+  description: {
+    color: theme.colors.gray[7],
+  },
+}));
 
 export default function Contacts() {
   const { classes, cx } = useStyles();
@@ -37,7 +21,7 @@ export default function Contacts() {
             <Link href={contact.url} external>
               <Title order={4}>{contact.title}</Title>
             </Link>
-            <Text>{contact.description}</Text>
+            <Text className={classes.description}>{contact.description}</Text>
           </div>
         ))}
       </Stack>
