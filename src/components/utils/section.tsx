@@ -10,6 +10,9 @@ import {
 import React from "react";
 
 const useStyles = createStyles((theme) => ({
+  container: {
+    width: "100%",
+  },
   title: {
     textAlign: "center",
     marginBottom: theme.spacing.xs,
@@ -25,26 +28,24 @@ export default function Section({
   children,
   icon,
   title,
-  sx,
 }: {
   children: React.ReactNode;
   icon: React.ElementType;
   title: string;
-  sx?: Sx;
 }) {
   const { classes, cx } = useStyles();
 
   const Icon = icon;
 
   return (
-    <Container pt="md" pb="lg">
+    <Container pt="md" pb="lg" className={classes.container}>
       <Group spacing={rem(1)} className={classes.title}>
         <Icon size={28} />
         <Title order={2} className={classes.titleText}>
           {title}
         </Title>
       </Group>
-      <Box sx={sx}>{children}</Box>
+      <Box>{children}</Box>
     </Container>
   );
 }

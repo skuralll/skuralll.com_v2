@@ -31,7 +31,17 @@ export default function Works() {
 
   return (
     <Section icon={IconPalette} title="Works">
-      <div></div>
+      <Grid>
+        <Grid.Col span="auto" sx={{ backgroundColor: "red" }}>
+          span=auto
+        </Grid.Col>
+        <Grid.Col span="auto" sx={{ backgroundColor: "blue" }}>
+          span=6
+        </Grid.Col>
+        <Grid.Col span="auto" sx={{ backgroundColor: "yellow" }}>
+          span=auto
+        </Grid.Col>
+      </Grid>
     </Section>
   );
 }
