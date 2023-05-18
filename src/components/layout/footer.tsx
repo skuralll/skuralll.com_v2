@@ -60,7 +60,7 @@ export default function Footer() {
             © 2023 skuralll
           </Text>
 
-          <Link href={"mailto:skuralll.com@gmail.com"} external>
+          <Link href={"https://github.com/skuralll/skuralll.com_v2"} external>
             View on GitHub
           </Link>
         </Container>

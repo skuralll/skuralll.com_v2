@@ -34,7 +34,7 @@ export default function Contacts() {
       <Stack spacing="sm">
         {contacts.map((contact) => (
           <div key={contact.title}>
-            <Link href="" external>
+            <Link href={contact.url} external>
               <Title order={4}>{contact.title}</Title>
             </Link>
             <Text>{contact.description}</Text>
