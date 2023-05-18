@@ -1,3 +1,5 @@
+import { SkillTag } from "./category";
+
 // ユーザー情報を表す型
 export type User = {
   name: string;
@@ -20,4 +22,13 @@ export type Contact = {
   title: string;
   description: string;
   url: string;
+};
+
+// 作品を表す型
+export type Work = {
+  img: string;
+  title: string;
+  description: string;
+  url: string;
+  skills: SkillTag[];
 };

@@ -1,4 +1,5 @@
-import { Contact, Profile } from "@/models/profile";
+import { STagReact } from "@/models/category";
+import { Contact, Profile, Work } from "@/models/profile";
 import { User } from "@/models/profile";
 
 export const user: User = {
@@ -53,5 +54,37 @@ export const contacts: Contact[] = [
     title: "メール",
     description: "SNSで連絡が取れない際はメールを送ってみてください。",
     url: "skuralll.com@gmail.com",
+  },
+];
+
+// 画像ファイルは比率2:1で用意する
+export const works: Work[] = [
+  {
+    img: "/images/sbot_tray.png",
+    title: "SwitchBot-Tray",
+    description: "SwitchBotをPCから操作",
+    url: "https://github.com/skuralll/switchbot-tray",
+    skills: [STagReact],
+  },
+  {
+    img: "/images/dvault.png",
+    title: "DepositVault",
+    description: "Minecraftサーバーでチェストを保護",
+    url: "https://github.com/skuralll/DepositVault",
+    skills: [],
+  },
+  {
+    img: "/images/skuralllcom.png",
+    title: "BalloonMaster",
+    description: "Android用アクションゲームアプリ",
+    url: "https://play.google.com/store/apps/details?id=com.skuralll.Balloon2",
+    skills: [],
+  },
+  {
+    img: "/images/bmaster.png",
+    title: "skuralll.com",
+    description: "個人サイト",
+    url: "https://github.com/skuralll/skuralll.com_v2",
+    skills: [],
   },
 ];
