@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
   title: {
     textAlign: "center",
     marginBottom: theme.spacing.xs,
-    color: "#3E4C5A",
+    color: theme.colors.cyan[9],
   },
   titleText: {
     textAlign: "center",

@@ -7,10 +7,10 @@ export const theme: MantineThemeOverride = {
     body: {
       backgroundColor: "#F8F9FA",
     },
-    a: {
-      textDecoration: "none",
-      color: theme.black,
-    },
+    // a: {
+    //   textDecoration: "none",
+    //   color: theme.black,
+    // },
   }),
   components: {},
 };
