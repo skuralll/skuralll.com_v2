@@ -1,4 +1,4 @@
-import { Anchor, AnchorProps } from "@mantine/core";
+import { Anchor, AnchorProps, createStyles } from "@mantine/core";
 import NextLink from "next/link";
 import React, { memo } from "react";
 
@@ -16,7 +16,14 @@ export type LinkProps = {
     }
 );
 
+const useStyles = createStyles((theme) => ({
+  link: {
+    color: "black",
+  },
+}));
+
 const Link: React.FC<LinkProps> = memo((props) => {
+  const { classes, cx } = useStyles();
   const { href, external, children, /*disable,*/ ...otherProps } = props;
 
   // if (disable) {
@@ -29,6 +36,7 @@ const Link: React.FC<LinkProps> = memo((props) => {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        className={classes.link}
         {...otherProps}
       >
         {children}
@@ -36,7 +44,11 @@ const Link: React.FC<LinkProps> = memo((props) => {
     );
   }
 
-  return <NextLink href={href}>{children}</NextLink>;
+  return (
+    <NextLink href={href} className={classes.link}>
+      {children}
+    </NextLink>
+  );
 });
 
 Link.displayName = "Link";
