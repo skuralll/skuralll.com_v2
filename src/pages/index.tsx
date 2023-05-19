@@ -3,6 +3,7 @@ import { Stack, createStyles } from "@mantine/core";
 import Contacts from "@/components/profile/contacts";
 import Works from "@/components/profile/works";
 import Content from "@/components/layout/content";
+import Certification from "@/components/profile/certification";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         {/* <Divider variant="dotted" /> */}
         {/* <Certification /> */}
         <Works />
+        <Certification />
         <Contacts />
       </Stack>
     </Content>

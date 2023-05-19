@@ -32,3 +32,9 @@ export type Work = {
   url: string;
   skills: SkillTag[];
 };
+
+// 資格を表す型
+export type Certification = {
+  name: string;
+  date: string;
+};
