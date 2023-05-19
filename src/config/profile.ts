@@ -1,4 +1,10 @@
-import { STagReact } from "@/models/category";
+import {
+  STagNext,
+  STagReact,
+  STagTauri,
+  StagBukkit,
+  StagUnity,
+} from "@/models/category";
 import { Contact, Profile, Work } from "@/models/profile";
 import { User } from "@/models/profile";
 
@@ -64,27 +70,27 @@ export const works: Work[] = [
     title: "SwitchBot-Tray",
     description: "SwitchBotをPCから操作",
     url: "https://github.com/skuralll/switchbot-tray",
-    skills: [STagReact],
+    skills: [STagReact, STagTauri],
   },
   {
     img: "/images/dvault.png",
     title: "DepositVault",
     description: "Minecraftサーバーでチェストを保護",
     url: "https://github.com/skuralll/DepositVault",
-    skills: [],
+    skills: [StagBukkit],
   },
   {
     img: "/images/skuralllcom.png",
-    title: "BalloonMaster",
-    description: "Android用アクションゲームアプリ",
-    url: "https://play.google.com/store/apps/details?id=com.skuralll.Balloon2",
-    skills: [],
-  },
-  {
-    img: "/images/bmaster.png",
     title: "skuralll.com",
     description: "個人サイト",
     url: "https://github.com/skuralll/skuralll.com_v2",
-    skills: [],
+    skills: [STagNext],
+  },
+  {
+    img: "/images/bmaster.png",
+    title: "BalloonMaster",
+    description: "Android用アクションゲームアプリ",
+    url: "https://play.google.com/store/apps/details?id=com.skuralll.Balloon2",
+    skills: [StagUnity],
   },
 ];

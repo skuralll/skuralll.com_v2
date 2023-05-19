@@ -47,7 +47,12 @@ export default function WorkCard({ work }: { work: Work }) {
       />
       <Group spacing="xs" className={classes.badges}>
         {work.skills.map((skill) => (
-          <Badge variant="gradient" gradient={skill.gradient} key={skill.name}>
+          <Badge
+            size="md"
+            variant="gradient"
+            gradient={skill.gradient}
+            key={skill.name}
+          >
             {skill.name}
           </Badge>
         ))}
