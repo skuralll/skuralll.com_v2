@@ -10,6 +10,7 @@ import {
   Badge,
   AspectRatio,
 } from "@mantine/core";
+import Link from "../utils/link";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -36,31 +37,33 @@ export default function WorkCard({ work }: { work: Work }) {
   const { classes, cx } = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Image
-        maw={332}
-        mx="0px"
-        radius="md"
-        src={work.img}
-        alt={work.title}
-        className={classes.img}
-      />
-      <Group spacing="xs" className={classes.badges}>
-        {work.skills.map((skill) => (
-          <Badge
-            size="md"
-            variant="gradient"
-            gradient={skill.gradient}
-            key={skill.name}
-          >
-            {skill.name}
-          </Badge>
-        ))}
-      </Group>
-      <Title order={4}>{work.title}</Title>
-      <Text fz="sm" className={classes.description}>
-        {work.description}
-      </Text>
-    </div>
+    <Link href={work.url} external>
+      <div className={classes.root}>
+        <Image
+          maw={332}
+          mx="0px"
+          radius="md"
+          src={work.img}
+          alt={work.title}
+          className={classes.img}
+        />
+        <Group spacing="xs" className={classes.badges}>
+          {work.skills.map((skill) => (
+            <Badge
+              size="md"
+              variant="gradient"
+              gradient={skill.gradient}
+              key={skill.name}
+            >
+              {skill.name}
+            </Badge>
+          ))}
+        </Group>
+        <Title order={4}>{work.title}</Title>
+        <Text fz="sm" className={classes.description}>
+          {work.description}
+        </Text>
+      </div>
+    </Link>
   );
 }
