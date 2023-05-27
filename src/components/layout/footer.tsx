@@ -65,13 +65,15 @@ export default function Footer() {
           </Link>
         </Container>
         {/* アクセスカウンタ */}
-        <img
-          src="https://moe-counter.yude.jp/get/@:skuralll"
-          alt=""
-          width={315}
-          height={100}
-          loading="lazy"
-        />
+        <Link href={"https://moe-counter.yude.jp/"} external>
+          <img
+            src="https://moe-counter.yude.jp/get/@:skuralll"
+            alt=""
+            width={315}
+            height={100}
+            loading="lazy"
+          />
+        </Link>
       </Container>
     </div>
   );
