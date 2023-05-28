@@ -36,5 +36,8 @@
   "devDependencies": {
     "@types/eslint": "^8",
     "eslint-config-prettier": "^8.8.0"
+  },
+  "resolutions": {
+    "@types/react": "18.2.6"
   }
 }
