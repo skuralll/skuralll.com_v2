@@ -83,4 +83,11 @@ export const works: Work[] = [
     url: "https://play.google.com/store/apps/details?id=com.skuralll.Balloon2",
     skills: [StagUnity],
   },
+  {
+    img: "/images/sembeds.png",
+    title: "Steam-Embeds",
+    description: "プレイしたゲームを埋め込み表示",
+    url: "https://steam-embeds.skuralll.com/",
+    skills: [STagNext],
+  },
 ];
