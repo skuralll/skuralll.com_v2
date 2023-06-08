@@ -87,7 +87,7 @@ export const works: Work[] = [
     img: "/images/sembeds.png",
     title: "Steam-Embeds",
     description: "プレイしたゲームを埋め込み表示",
-    url: "https://steam-embeds.skuralll.com/",
+    url: "https://steam-embeds.vercel.app/",
     skills: [STagNext],
   },
 ];
