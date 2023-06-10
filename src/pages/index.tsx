@@ -8,7 +8,7 @@ import Meta from "@/components/app/meta";
 
 export default function Home() {
   return (
-    <Content>
+    <>
       <Meta />
       <Stack spacing="lg" mb="md">
         <User />
@@ -19,6 +19,6 @@ export default function Home() {
         <Certification />
         <Contacts />
       </Stack>
-    </Content>
+    </>
   );
 }

@@ -4,6 +4,7 @@ import { MantineProvider } from "@mantine/core";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { theme } from "@/components/app/theme";
+import Content from "@/components/layout/content";
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -31,7 +32,9 @@ export default function App(props: AppProps) {
 
       <MantineProvider withGlobalStyles withNormalizeCSS theme={theme}>
         <Header links={links} />
-        <Component {...pageProps} />
+        <Content>
+          <Component {...pageProps} />
+        </Content>
         <Footer />
       </MantineProvider>
     </>
