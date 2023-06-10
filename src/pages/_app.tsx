@@ -13,6 +13,10 @@ export default function App(props: AppProps) {
       link: "/",
       label: "Home",
     },
+    {
+      link: "/hobby",
+      label: "Hobby",
+    },
   ];
 
   return (
