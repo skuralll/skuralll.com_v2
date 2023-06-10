@@ -9,8 +9,10 @@ import {
   Transition,
   rem,
   Title,
+  Anchor,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import Link from "../utils/link";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -56,6 +58,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   link: {
+    border: "none",
     display: "block",
     lineHeight: 1,
     padding: `${rem(8)} ${rem(12)}`,
@@ -67,6 +70,7 @@ const useStyles = createStyles((theme) => ({
         : theme.colors.gray[7],
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
+    backgroundColor: "transparent",
 
     "&:hover": {
       backgroundColor:
@@ -82,6 +86,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   linkActive: {
+    border: "none",
     "&, &:hover": {
       backgroundColor: theme.fn.variant({
         variant: "light",
@@ -103,20 +108,20 @@ export default function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <a
-      key={link.label}
-      href={link.link}
-      className={cx(classes.link, {
-        // [classes.linkActive]: active === link.link,
-      })}
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-        close();
-      }}
-    >
-      {link.label}
-    </a>
+    <Link key={link.label} href={link.link}>
+      <button
+        className={cx(classes.link, {
+          [classes.linkActive]: active === link.link,
+        })}
+        onClick={(event) => {
+          setActive(link.link);
+          console.log(link.link);
+          close();
+        }}
+      >
+        {link.label}
+      </button>
+    </Link>
   ));
 
   return (

@@ -19,6 +19,7 @@ export type LinkProps = {
 const useStyles = createStyles((theme) => ({
   link: {
     color: "black",
+    textDecoration: "none",
   },
 }));
 

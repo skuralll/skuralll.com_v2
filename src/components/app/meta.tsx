@@ -37,6 +37,8 @@ export default function Meta({
 
   return (
     <Head>
+      <title>{title}</title>
+
       <meta property="og:title" content={title} />
 
       <meta name="description" content={desc} />
