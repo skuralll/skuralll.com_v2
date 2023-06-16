@@ -90,4 +90,11 @@ export const works: Work[] = [
     url: "https://steam-embeds.vercel.app/",
     skills: [STagNext],
   },
+  {
+    img: "/images/github.png",
+    title: "Other Works",
+    description: "その他のプロジェクトはこちら",
+    url: "https://github.com/skuralll?tab=repositories",
+    skills: [],
+  },
 ];
