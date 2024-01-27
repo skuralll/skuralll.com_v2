@@ -65,9 +65,9 @@ export default function Footer() {
           </Link>
         </Container>
         {/* アクセスカウンタ */}
-        <Link href={"https://moe-counter.yude.jp/"} external>
+        <Link href={"https://moe-counter-cf.yude.workers.dev/"} external>
           <img
-            src="https://moe-counter.yude.jp/get/@:skuralll"
+            src="https://moe-counter-cf.yude.workers.dev/skuralll"
             alt=""
             width={315}
             height={100}
